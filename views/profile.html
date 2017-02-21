@@ -1,0 +1,43 @@
+<ul class="navBar">
+    <li><a href="#/profile/{{userid}}">Profile</a></li>
+    <li><a href="#/inbox/{{userid}}">Message</a></li>
+    <li><a href="#/">Logout</a></li>
+</ul>
+<div id="profileForm">
+    <div class="formStyleHeading">User Profile<input value="Edit" id="editBtn" type="button" ng-click="userdataEdit()"/></div>
+    <div ng-show="editInfoSuccess" class="editInfoSuccess">Update has been successfully saved!<span id="deletePopup">&times;</span></div>
+    <form>
+        <div class="inputContainer">
+            <label for="username"><span>Username:</span></label>
+            <input ng-model="userInfo.username" type="text" id="username" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="password"><span>Password:</span></label>
+            <input ng-model="userInfo.password" type="text" id="password" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="name"><span>Name:</span></label>
+            <input ng-model="userInfo.name" type="text" id="name" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="email"><span>Email:</span></label>
+            <input ng-model="userInfo.email" type="text" id="email" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="phone"><span>Phone:</span></label>
+            <input ng-model="userInfo.phone" type="text" id="phone" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="location"><span>Location:</span></label>
+            <input ng-model="userInfo.location" type="text" id="location" class="input-field" disabled/>
+        </div>
+        <div class="inputContainer">
+            <label for="editPageBtn"><span></span></label>
+            <div id="editPageBtn">
+                <input ng-show="showEditBtn" type="button" value="Submit Change" ng-click="submitEdit(userInfo.username,userInfo.password,userInfo.name,userInfo.email,userInfo.phone,userInfo.location)"/>
+                <input ng-show="showEditBtn" type="button" value="Cancel" ng-click="cancelEdit()"/>
+
+            </div>
+        </div>
+    </form>
+</div>

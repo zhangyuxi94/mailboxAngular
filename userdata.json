@@ -1,0 +1,28 @@
+[{
+  "userid":"1",
+  "username":"yuxi",
+  "password":"yuxi",
+  "name":"Yuxi Zhang",
+  "email":"yuxi@gmail.com",
+  "phone":"7028570160",
+  "location":"MA"
+},
+  {
+    "userid":"2",
+    "username":"henry",
+    "password":"henry",
+    "name":"Henry Dong",
+    "email":"henry@gmail.com",
+    "phone":"2132321231",
+    "location":"NJ"
+  },
+  {
+    "userid":"3",
+    "username":"qian",
+    "password":"qian",
+    "name":"Qian Zhang",
+    "email":"qian@gmail.com",
+    "phone":"3421236687",
+    "location":"NY"
+  }
+  ]

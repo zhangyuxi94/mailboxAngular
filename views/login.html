@@ -1,0 +1,22 @@
+<div id="formStyle">
+        <div class="formStyleHeading">Login Here</div>
+    <div ng-hide="matchornot" id="matchOrNot">Username and password not match! </div>
+        <form>
+            <div class="inputContainer">
+                <label for="username"><span>Username</span></label>
+                <input type="text" ng-model="username" id="username" class="input-field" placeholder="Please enter your username"/>
+                <label for="nameAlert"><span></span></label>
+                <div id="nameAlert" class="formAlert">Please fill out the username!</div>
+            </div>
+            <div class="inputContainer">
+                <label for="password"><span>Password</span></label>
+                <input type="text" ng-model="password" id="password" class="input-field" value=""  placeholder="Please enter your password"/>
+                <label for="emailAlert"><span></span></label>
+                <div id="emailAlert" class="formAlert">Please fill out the password!</div>
+            </div>
+            <div class="inputContainer">
+                <label for="submitBtn"><span></span></label>
+                <input type="button" value="Submit" id="submitBtn" ng-click="loginValication(username,password)"/>
+            </div>
+        </form>
+</div>

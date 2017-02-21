@@ -1,0 +1,29 @@
+<ul class="navBar">
+    <li><a href="#/profile/{{userid}}">Profile</a></li>
+    <li><a href="#/inbox/{{userid}}">Message</a></li>
+    <li><a href="#/">Logout</a></li>
+</ul>
+<div class="messagePage">
+    <ul>
+        <li><a href="#/inbox/{{userid}}">INBOX</a></li>
+        <li><a href="#/sentmail/{{userid}}">SENT MAIL</a></li>
+        <li style="background-color: rgba(225, 214, 208, 0.96)"><a style="color: #773340" href="#/compose/{{userid}}">COMPOSE</a></li>
+    </ul>
+    <div id="messageBox">
+        <form>
+            <div class="inputContainer">
+                <label for="receiver"><span>To:</span></label>
+                <input type="text" id="receiver" class="input-field" placeholder="Username of the receiver"/>
+            </div>
+            <div class="inputContainer">
+                <label for="subject"><span>Subject:</span></label>
+                <input type="text" id="subject" class="input-field" placeholder="Title of the message"/>
+            </div>
+            <div class="inputContainer">
+                <label for="content"><span>Content:</span></label>
+                <textarea id="content" class="input-field"  placeholder="Content of the message"></textarea>
+            </div>
+            <input type="button" value="Send"/>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Abel';
+    color: #61413f;
+}
+
+input[type=button]{
+    font-family: 'Abel';
+}
+
+#formStyle{
+    position: relative;
+    width:40%;
+    margin: 100px auto 0 auto;
+    padding: 40px 20px 40px 20px;
+    background-color: rgba(224, 213, 207, 0.96);
+    border-radius: 10px;
+    color: #773340;
+    z-index: 0;
+    -webkit-box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+}
+.formStyleHeading{
+    font-weight: bold;
+    border-bottom: 2px solid #773340;
+    font-size: 20px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    color: #773340;
+}
+
+.inputContainer{
+    display: block;
+    padding: 10px;
+}
+label>span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+}
+
+.input-field{
+    width: 70%;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+}
+.input-field:focus{
+    border: 1px solid #0C0;
+}
+
+#formStyle input[type=button] {
+    width: 74%;
+    background-color: #773340;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.formAlert{
+    display: none;
+}
+
+#matchOrNot{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.editInfoSuccess{
+    background-color: #dff0d8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*profile page*/
+#profileForm{
+    position: relative;
+    width:60%;
+    margin: 50px auto 50px auto;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(225, 214, 208, 0.96);
+    border-radius: 10px;
+    color: #773340;
+    z-index: 0;
+    -webkit-box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+}
+
+#profileForm .input-field{
+    width: 80%;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+}
+
+#profileForm .input-field:disabled{
+    background-color: #f8ede7;
+}
+
+.navBar{
+    list-style: none;
+    padding: 0 0 0 20px;
+    background-color: #773340;
+}
+.navBar li{
+    padding: 20px;
+    display: inline-block;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+
+#editBtn{
+    color: white;
+    background-color: #773340;
+    float: right;
+    padding: 3px 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#editPageBtn input[type=button]{
+    text-align: center;
+    width: 40%;
+    color: white;
+    margin: 0 auto;
+    background-color: #773340;
+    /*float: right;*/
+    padding: 3px 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#deletePopup{
+    float: right;
+    cursor: pointer;
+}
+
+#msgPopup{
+    position: fixed;
+    width:50%;
+    margin-left: 25%;
+    padding: 10px 20px 30px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #773340;
+    margin-top: 100px;
+    z-index: 1;
+    -webkit-box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.16) ;
+}
+
+#msgPopup table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#msgPopup th,#msgPopup td{
+    padding: 5px 10px;
+    border-bottom: 1px black solid;
+
+}
+#msgPopup th{
+    text-align: right;
+    border-right: 1px black solid;
+}
+
+#msgPopup span{
+    float: right;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+/*messagePage*/
+.messagePage{
+    position: relative;
+    width:90%;
+    margin: 50px auto;
+    border-radius: 10px;
+    color: #773340;
+}
+
+.messagePage ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.messagePage ul li{
+    background-color: rgba(152, 135, 143, 0.96);
+    border-radius: 10px 10px 0 0;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.messagePage ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+#messageBox{
+    padding: 20px;
+    position: relative;
+    background-color: rgba(239, 228, 223, 0.96);
+    border-radius: 10px;
+    color: #773340;
+}
+
+#myTable{
+    font-family: 'Abel';
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+#myTable td, #myTable th{
+    padding: 10px 20px;
+    border-bottom:1px #773340 solid;
+}
+
+#myTable th{
+    color: white;
+    background-color: #97868e;
+    border-top: 1px #773340 solid;
+}
+
+#myTable tr input[type=button]{
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    margin: 0 5px;
+    padding: 4px 8px;
+    background-color: #5eb85e;
+    cursor: pointer;
+}
