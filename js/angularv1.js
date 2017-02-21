@@ -157,72 +157,87 @@
         }
         function messageController($scope,userData,$routeParams){
             $scope.showMsgDetail=false;
-            var messageData=userData.messageData;
+            var userInfo=userData.userInfo;
             var thisUserId=$routeParams.id;
-            var thisUserMsgs=[];
-            var thisUserSent=[];
             $scope.userid=thisUserId;
-            for(var i=0;i<messageData.length;i++){
-                if(messageData[i].recieverid===thisUserId){
-                    thisUserMsgs.push(messageData[i]);
-                }
-                if(messageData[i].senderid===thisUserId){
-                    thisUserSent.push(messageData[i]);
-                }
-            }
+            var thisUserMsgs=userInfo[thisUserId-1].inbox;
+            var thisUserSent=userInfo[thisUserId-1].sentmail;
             $scope.thisUserMsgs=thisUserMsgs;
             $scope.thisUserSent=thisUserSent;
+            $(document).ready(function(){
+                for(var aa=0;aa<thisUserMsgs.length;aa++){
+                    if(thisUserMsgs[aa].star===true){
+                        $("#stared"+aa).removeClass("notstared")
+                            .addClass("stared");
+                    }else if(thisUserMsgs[aa].star===false){
+                        $("#stared"+aa).removeClass("stared")
+                            .addClass("notstared");
+                    }
+                }
+                for(var bb=0;bb<thisUserSent.length;bb++){
+                    if(thisUserSent[bb].star===true){
+                        $("#sentStared"+bb).removeClass("notstared")
+                            .addClass("stared");
+                    }else if(thisUserSent[bb].star===false){
+                        $("#sentStared"+bb).removeClass("stared")
+                            .addClass("notstared");
+                    }
+                }
+            });
 
             $scope.viewMsg=function (trIndex) {
                 $scope.showMsgDetail=true;
                 $("#msgPopup").removeClass("ng-hide");
                 $scope.msgDetails=thisUserMsgs[trIndex];
-            }
+            };
             $scope.viewSent=function (trIndex) {
                 $scope.showMsgDetail=true;
                 $("#msgPopup").removeClass("ng-hide");
                 $scope.msgDetails=thisUserSent[trIndex];
-            }
+            };
             $scope.closeViewMsg=function(){
                 $("#msgPopup").addClass("ng-hide");
-            }
+            };
             $scope.deleteMsg=function(trIndex){
-                for(var i=0;i<messageData.length;i++){
-                    if(messageData[i].msgid===thisUserMsgs[trIndex].msgid){
-                        messageData.splice(i,1);
-                    }
-                }
                 thisUserMsgs.splice(trIndex,1);
-                var messageDataStr=JSON.stringify(messageData);
-                localStorage.removeItem("messageData");
-                localStorage.setItem("messageData",messageDataStr);
-            }
+                var userDataStr=JSON.stringify(userInfo);
+                localStorage.removeItem("userdata");
+                localStorage.setItem("userdata",userDataStr);
+            };
             $scope.deleteSent=function(trIndex){
-                for(var i=0;i<messageData.length;i++){
-                    if(messageData[i].msgid===thisUserSent[trIndex].msgid){
-                        messageData.splice(i,1);
-                    }
-                }
                 thisUserSent.splice(trIndex,1);
-                var messageDataStr=JSON.stringify(messageData);
-                localStorage.removeItem("messageData");
-                localStorage.setItem("messageData",messageDataStr);
+                var userDataStr=JSON.stringify(userInfo);
+                localStorage.removeItem("userdata");
+                localStorage.setItem("userdata",userDataStr);
             };
             $scope.starMsg=function(trIndex){
-                var mstStarted=$("#msgStarted"+trIndex);
-                if(mstStarted.css("display")==="none"){
-                    mstStarted.css("display","inline-block");
-                }else if(mstStarted.css("display")==="inline-block"){
-                    mstStarted.css("display","none");
+                if(thisUserMsgs[trIndex].star===false){
+                    $("#stared"+trIndex).removeClass("notstared")
+                        .addClass("stared");
+                    thisUserMsgs[trIndex].star=true;
+                }else if(thisUserMsgs[trIndex].star===true){
+                    $("#stared"+trIndex).removeClass("stared")
+                        .addClass("notstared");
+                    thisUserMsgs[trIndex].star=false;
                 }
-            }
+                var userDataStr=JSON.stringify(userInfo);
+                localStorage.removeItem("userdata");
+                localStorage.setItem("userdata",userDataStr);
+            };
             $scope.starSent=function(trIndex){
                 var sentStarted=$("#sentStarted"+trIndex);
-                if(sentStarted.css("display")==="none"){
-                    sentStarted.css("display","inline-block");
-                }else if(sentStarted.css("display")==="inline-block"){
-                    sentStarted.css("display","none");
+                if(thisUserSent[trIndex].star===false){
+                    $("#sentStared"+trIndex).removeClass("notstared")
+                        .addClass("stared");
+                    thisUserSent[trIndex].star=true;
+                }else if(thisUserSent[trIndex].star===true){
+                    $("#sentStared"+trIndex).removeClass("stared")
+                        .addClass("notstared");
+                    thisUserSent[trIndex].star=false;
                 }
+                var userDataStr=JSON.stringify(userInfo);
+                localStorage.removeItem("userdata");
+                localStorage.setItem("userdata",userDataStr);
             }
         }
         function findUserById(userid,userData){
@@ -234,6 +249,7 @@
         }
     }
 })();
+
 
 
 

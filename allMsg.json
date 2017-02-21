@@ -6,7 +6,7 @@
   "sender":"henry",
   "subject":"Hello From Henry",
   "content":"This is the test message from Henry to Yuxi",
-  "start":false
+  "star":false
 },
   {
     "msgid":"1.2",
@@ -16,7 +16,7 @@
     "sender":"qian",
     "subject":"Hello From Qian",
     "content":"Test message from Qian to Yuxi",
-    "start":false
+    "star":false
   },
   {
     "msgid":"2.1",
@@ -26,7 +26,7 @@
     "sender":"yuxi",
     "subject":"Hello From Yuxi",
     "content":"Test message from Yuxi to Henry",
-    "start":false
+    "star":false
   },
   {
   "msgid":"2.2",
@@ -36,7 +36,7 @@
     "sender":"qian",
     "subject":"Hello From Qian",
   "content":"Test message from Qian to Henry",
-    "start":false
+    "star":false
 },
   {
     "msgid":"3.1",
@@ -46,6 +46,6 @@
     "sender":"yuxi",
     "subject":"Hello From Yuxi",
     "content":"Test message from Yuxi to Qian",
-    "start":false
+    "star":false
   }
 ]

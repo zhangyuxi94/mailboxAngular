@@ -232,6 +232,7 @@ label>span{
     border-collapse: collapse;
     text-align: center;
     width: 100%;
+    /*color: red;*/
 }
 
 #myTable td, #myTable th{
@@ -248,9 +249,17 @@ label>span{
 #myTable tr input[type=button]{
     border: 0;
     border-radius: 3px;
-    color: white;
     margin: 0 5px;
     padding: 4px 8px;
-    background-color: #5eb85e;
     cursor: pointer;
+}
+
+.stared{
+    background-color:#f0ad50;
+    color:#ffffff
+}
+
+.notstared{
+    background-color: #ffffff;
+    color: #f0ad51
 }

@@ -40,10 +40,11 @@
             </tr>
             <tr ng-repeat="msgs in thisUserMsgs">
                 <td>{{msgs.sender}}</td>
-                <td><span id="msgStarted{{$index}}" style='color: #f0ad51;padding-left: 5px;display: none'>&starf;</span>{{msgs.subject}}</td>
-                <td><input type="button" style="background-color: #5eb85e" value="view" ng-click="viewMsg($index)"/>
-                    <input type="button" style="background-color: #f0ad50" value="&star;" ng-click="starMsg($index)"/>
-                    <input type="button" style="background-color: #c8322e" value="&times;" ng-click="deleteMsg($index)"/>
+                <td>{{msgs.subject}}</td>
+                <td>
+                    <input type="button" style="background-color: #5eb85e;color:white" value="view" ng-click="viewMsg($index)"/>
+                    <input type="button" value="&starf;" id="stared{{$index}}" class="notstared" ng-click="starMsg($index)"/>
+                    <input type="button" style="background-color: #c8322e;color:white" value="&times;" ng-click="deleteMsg($index)"/>
                 </td>
             </tr>
         </table>
