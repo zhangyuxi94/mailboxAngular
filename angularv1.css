@@ -37,6 +37,7 @@ input[type=button]{
     display: block;
     padding: 10px;
 }
+
 label>span{
     width: 100px;
     font-weight: bold;
@@ -138,16 +139,19 @@ label>span{
     padding: 3px 10px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+
 }
 
 #editPageBtn input[type=button]{
     text-align: center;
-    width: 40%;
+    /*width: 40%;*/
     color: white;
+    cursor: pointer;
     margin: 0 auto;
     background-color: #773340;
     /*float: right;*/
-    padding: 3px 10px;
+    padding: 10px;
     border: 0;
     border-radius: 5px;
 }
@@ -218,7 +222,7 @@ label>span{
     color: #ffffff;
 }
 
-
+/*messagebox*/
 #messageBox{
     padding: 20px;
     position: relative;
@@ -226,6 +230,37 @@ label>span{
     border-radius: 10px;
     color: #773340;
 }
+
+#messageBox form{
+    width: 60%;
+    margin: 0 auto;
+    /*background-color: #773340;*/
+}
+
+#messageBox form .input-field{
+    font-family: 'Abel';
+    width: 70%;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+}
+
+#messageBox form input[type=button]{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #773340;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 #myTable{
     font-family: 'Abel';
