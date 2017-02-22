@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="882fa789-299f-433b-8e02-974639623e2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allMsg.json" afterPath="$PROJECT_DIR$/allMsg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularv1.css" afterPath="$PROJECT_DIR$/angularv1.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angularv1.js" afterPath="$PROJECT_DIR$/js/angularv1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userdata.json" afterPath="$PROJECT_DIR$/userdata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/messageInbox.html" afterPath="$PROJECT_DIR$/views/messageInbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/messageSentMail.html" afterPath="$PROJECT_DIR$/views/messageSentMail.html" />
     </list>
     <ignored path="angularV1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +27,23 @@
       <file leaf-file-name="angularv1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/angularv1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1082">
-              <caret line="177" column="53" selection-start-line="177" selection-start-column="53" selection-end-line="177" selection-end-column="53" />
+            <state relative-caret-position="114">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
-                <element signature="e#768#1157#0" expanded="false" />
-                <element signature="e#2768#3668#0" expanded="false" />
-                <element signature="e#3733#6448#0" expanded="false" />
-                <element signature="e#4102#4372#0" expanded="false" />
-                <element signature="e#4235#4317#0" expanded="false" />
-                <element signature="e#6241#6301#0" expanded="false" />
+                <element signature="e#275#529#0" expanded="false" />
+                <element signature="e#2818#3718#0" expanded="false" />
+                <element signature="e#8937#12858#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +51,7 @@
       <file leaf-file-name="angularv1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angularv1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="4313">
               <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
               <folding />
             </state>
@@ -59,7 +61,7 @@
       <file leaf-file-name="messageInbox.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/messageInbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="589">
               <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
@@ -75,7 +77,7 @@
       <file leaf-file-name="messageSentMail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/messageSentMail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="456">
               <caret line="44" column="71" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="71" />
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
@@ -136,8 +138,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="54" />
+    <option name="x" value="5" />
+    <option name="y" value="88" />
     <option name="width" value="1365" />
     <option name="height" value="681" />
   </component>
@@ -166,8 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -216,6 +216,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,15 +304,16 @@
       <updated>1487269161518</updated>
       <workItem from="1487269162990" duration="63142000" />
       <workItem from="1487689296086" duration="578000" />
-      <workItem from="1487690746962" duration="19836000" />
+      <workItem from="1487690746962" duration="21397000" />
+      <workItem from="1487725640459" duration="9064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83556000" />
+    <option name="totallyTimeSpent" value="94181000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="54" width="1365" height="681" extended-state="1" />
+    <frame x="5" y="88" width="1365" height="681" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25277984" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -352,15 +355,69 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/angularv1.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2888">
+          <caret line="243" column="47" selection-start-line="243" selection-start-column="47" selection-end-line="243" selection-end-column="47" />
+          <folding>
+            <element signature="e#275#529#0" expanded="false" />
+            <element signature="e#2818#3718#0" expanded="false" />
+            <element signature="e#8937#12858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularv1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4313">
+          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/messageInbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/messageSentMail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="71" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angularv1.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#768#1157#0" expanded="false" />
-            <element signature="e#2768#3668#0" expanded="false" />
-            <element signature="e#3733#6448#0" expanded="false" />
-            <element signature="e#4102#4372#0" expanded="false" />
-            <element signature="e#4235#4317#0" expanded="false" />
-            <element signature="e#6241#6301#0" expanded="false" />
+            <element signature="e#275#529#0" expanded="false" />
+            <element signature="e#2818#3718#0" expanded="false" />
+            <element signature="e#8937#12858#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -369,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,12 +471,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#768#1157#0" expanded="false" />
-            <element signature="e#2768#3668#0" expanded="false" />
-            <element signature="e#3733#6448#0" expanded="false" />
-            <element signature="e#4102#4372#0" expanded="false" />
-            <element signature="e#4235#4317#0" expanded="false" />
-            <element signature="e#6241#6301#0" expanded="false" />
+            <element signature="e#275#529#0" expanded="false" />
+            <element signature="e#2818#3718#0" expanded="false" />
+            <element signature="e#8937#12858#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -429,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -513,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,21 +565,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularv1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/messageInbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="589">
           <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
@@ -549,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/messageSentMail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="456">
           <caret line="44" column="71" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="71" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
@@ -562,17 +597,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angularv1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4313">
+          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/angularv1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="177" column="53" selection-start-line="177" selection-start-column="53" selection-end-line="177" selection-end-column="53" />
+        <state relative-caret-position="114">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="e#768#1157#0" expanded="false" />
-            <element signature="e#2768#3668#0" expanded="false" />
-            <element signature="e#3733#6448#0" expanded="false" />
-            <element signature="e#4102#4372#0" expanded="false" />
-            <element signature="e#4235#4317#0" expanded="false" />
-            <element signature="e#6241#6301#0" expanded="false" />
+            <element signature="e#275#529#0" expanded="false" />
+            <element signature="e#2818#3718#0" expanded="false" />
+            <element signature="e#8937#12858#0" expanded="false" />
           </folding>
         </state>
       </provider>

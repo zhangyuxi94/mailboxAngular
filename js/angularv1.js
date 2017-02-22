@@ -3,9 +3,9 @@
  */
 (function(){
     var userdata=[];
-    var messageData=[];
+    // var messageData=[];
     var xhttp=new XMLHttpRequest();
-    var xhttp2=new XMLHttpRequest();
+    // var xhttp2=new XMLHttpRequest();
     if(localStorage.getItem("userdata")===null){
         xhttp.onreadystatechange=function(){
             if(xhttp.readyState==4&&xhttp.status==200){
@@ -20,20 +20,20 @@
         var userdataString=localStorage.getItem("userdata");
         userdata=JSON.parse(userdataString);
     }
-    if(localStorage.getItem("messageData")===null){
-        xhttp2.onreadystatechange=function(){
-            if(xhttp2.readyState==4&&xhttp2.status==200){
-                var userdataString2=xhttp2.responseText;
-                localStorage.setItem("messageData",userdataString2);
-                messageData=JSON.parse(userdataString2);
-            }
-        };
-        xhttp2.open("GET","allMsg.json",true);
-        xhttp2.send();
-    }else{
-        var userdataString2=localStorage.getItem("messageData");
-        messageData=JSON.parse(userdataString2);
-    }
+    // if(localStorage.getItem("messageData")===null){
+    //     xhttp2.onreadystatechange=function(){
+    //         if(xhttp2.readyState==4&&xhttp2.status==200){
+    //             var userdataString2=xhttp2.responseText;
+    //             localStorage.setItem("messageData",userdataString2);
+    //             messageData=JSON.parse(userdataString2);
+    //         }
+    //     };
+    //     xhttp2.open("GET","allMsg.json",true);
+    //     xhttp2.send();
+    // }else{
+    //     var userdataString2=localStorage.getItem("messageData");
+    //     messageData=JSON.parse(userdataString2);
+    // }
     mainControl();
     function mainControl(){
         var app=angular.module("loginApp",["ngRoute"]);
@@ -64,8 +64,8 @@
         });
         app.factory("userData",function(){
             return{
-                userInfo:userdata,
-                messageData:messageData
+                userInfo:userdata
+                // messageData:messageData
             }
         });
         app.controller("loginController",loginController);
@@ -124,26 +124,67 @@
                     "phone":phone,
                     "location":location
                 };
+                // var userInbox=userData.userInfo[thisUserId-1].inbox;
+                // var userSentmail=userData.userInfo[thisUserId-1].sentmail;
+                // for(var i1=0;i1<userInbox.length;i1++){
+                //     userInbox[i1].reciever=username;
+                //
+                // }
+                // for(var i2=0;i2<userSentmail.length;i2++){
+                //     userSentmail[i2].sender=username;
+                // }
+                for(var j=0;j<userData.userInfo.length;j++){
+                    for(var j1=0;j1<userData.userInfo[j].inbox.length;j1++){
+                        if(userData.userInfo[j].inbox[j1].senderid===thisUserId){
+                            console.log(userData.userInfo[j].inbox[j1].sender);
+                            userData.userInfo[j].inbox[j1].sender=username;
+                        }
+                        if(userData.userInfo[j].inbox[j1].recieverid===thisUserId){
+                            userData.userInfo[j].inbox[j1].reciever=username;
+                            console.log(userData.userInfo[j].inbox[j1].reciever);
+                        }
+
+                        // console.log(userData.userInfo[j].inbox[j1]);
+                    }
+                    for(var j2=0;j2<userData.userInfo[j].sentmail.length;j2++){
+                        if(userData.userInfo[j].sentmail[j2].senderid===thisUserId){
+                            userData.userInfo[j].sentmail[j2].sender=username;
+                            console.log(userData.userInfo[j].sentmail[j2].sender);
+                        }
+                        if(userData.userInfo[j].sentmail[j2].recieverid===thisUserId){
+                            userData.userInfo[j].sentmail[j2].reciever=username;
+                            console.log(userData.userInfo[j].sentmail[j2].reciever);
+                        }
+                    }
+                }
+                editedThisUserData.inbox=userData.userInfo[thisUserId-1].inbox;
+                editedThisUserData.sentmail=userData.userInfo[thisUserId-1].sentmail;
                 userData.userInfo.splice(thisUserId-1,1,editedThisUserData);
+
                 var userDataObj=userData.userInfo;
                 var userDataStr=JSON.stringify(userDataObj);
+                // console.log(userDataObj);
                 localStorage.removeItem("userdata");
                 localStorage.setItem("userdata",userDataStr);
 
-                for(var j=0;j<userData.messageData.length;j++){
-                    if(userData.messageData[j].senderid===thisUserId){
-                        userData.messageData[j].sender=username;
-                    }
-                    if(userData.messageData[j].recieverid===thisUserId){
-                        userData.messageData[j].reciever=username;
-                    }
-                    userData.messageData.splice(j,1,userData.messageData[j]);
-                }
-                var messageDataObj=userData.messageData;
-                var messageDataStr=JSON.stringify(messageDataObj);
-                localStorage.removeItem("messageData");
-                localStorage.setItem("messageData",messageDataStr);
+                // for(var j=0;j<userData.messageData.length;j++){
+                //     if(userData.messageData[j].senderid===thisUserId){
+                //         userData.messageData[j].sender=username;
+                //     }
+                //     if(userData.messageData[j].recieverid===thisUserId){
+                //         userData.messageData[j].reciever=username;
+                //     }
+                //     userData.messageData.splice(j,1,userData.messageData[j]);
+                // }
+                // var messageDataObj=userData.messageData;
+                // var messageDataStr=JSON.stringify(messageDataObj);
+                // localStorage.removeItem("messageData");
+                // localStorage.setItem("messageData",messageDataStr);
 
+                // var thisUserMsgs=userData.userInfo[thisUserId-1];
+                // var thisUserSent=userData.userInfo[thisUserId-1].sentmail;
+                // console.log(thisUserMsgs);
+                // console.log(thisUserSent);
                 $scope.showEditBtn=false;
                 $scope.editInfoSuccess=true;
                 $(".editInfoSuccess").removeClass("ng-hide");
